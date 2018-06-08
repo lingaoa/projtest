@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.wrapper {
+  width: 990px;
+  margin: 0px auto; }
+
+.header {
+  height: 98px;
+  overflow: hidden; }
+
+.main a {
+  color: #0083ce;
+  text-decoration: none; }
+
+.main a:hover {
+  text-decoration: underline; }
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  color: #525252;
+  padding: 10px 14px 10px 20px;
+  font-family: "微软雅黑";
+  font-size: 20px; }
+
+h2 span, h2 a {
+  font-size: 13px;
+  float: right; }
+
+.main {
+  background: url(../img/r_bg.png) no-repeat right bottom;
+  height: 400px;
+  box-sizing: border-box;
+  box-shadow: -1px 1px 10px #efefef, -1px 10px 10px #efefef;
+  border-top: #0083ce 2px solid; }
+
+form {
+  width: 300px;
+  padding-left: 100px;
+  padding-top: 5px;
+  color: #a5a5a5; }
+
+form .lab input {
+  width: 268px;
+  height: 26px;
+  padding: 6px 12px 6px 40px;
+  margin-bottom: 30px;
+  font-size: 14px; }
+
+#username {
+  background: url(../img/regest.png) no-repeat 10px -115px;
+  border: 1px solid #ccc; }
+
+#password, #repwd {
+  background: url(../img/regest.png) no-repeat 10px -146px;
+  border: 1px solid #ccc; }
+
+.arg {
+  font-size: 12px;
+  line-height: 12px; }
+
+#argee {
+  vertical-align: middle;
+  margin-right: 10px; }
+
+#submit {
+  width: 322px;
+  height: 40px;
+  background: #0099f1;
+  color: #fff;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 14px; }
+
+#submit:hover {
+  background: #0083ce; }
+
+.footer {
+  margin-top: 50px;
+  font-size: 14px; }
+
+.footer p {
+  text-align: center;
+  line-height: 30px;
+  color: #666; }
+
+.footer p a {
+  color: #666;
+  text-decoration: none;
+  padding: 0px 6px; }
+
+.footer p a:hover {
+  color: #0083ce;
+  text-decoration: underline; }

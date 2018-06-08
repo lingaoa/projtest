@@ -1,0 +1,125 @@
+$wrapper:1190px;
+$hea-pad-size:13px;
+$none:none;
+$normal:normal;
+$ud-line:underline;
+$line:1px;
+$right:right;
+$zero:0px;
+$hundred:100px;
+
+$five-size:5px;
+$ten-size:10px;
+
+$font-size:16px;
+$sfont-size:12px;
+$thirty:30px;
+
+$inp-border:#c7a774;
+$left:left;
+$white:#fff;
+$fa-hover-color:#e54948;
+$f-color:#5e5e5e;
+.header-bottom{
+    padding: $thirty $zero $thirty $zero ;
+}
+.header-bottom .logo{
+    float: left;
+}
+.header-bottom .logo a{
+    display: block;
+    width: 180px;
+    height: 61px;
+    background: url(../img/logo_01.png);
+}
+.header-bottom form{
+    float: $left;
+}
+.header-bottom form input{
+    float: $left;
+    padding: $hea-pad-size $zero $hea-pad-size $five-size;
+    font-size: $font-size;
+    width:451px ;
+    border:$line solid $inp-border;
+}
+form button{
+    float: $left;
+    height: 46px;
+    border:$line solid $inp-border;
+    border-left: $none;
+    width: $hundred;
+    background: $white;
+}
+.yao{
+    float: $left;
+    margin-left:$hundred+20;
+}
+.yao ul li{
+    float: $left;
+    line-height: $thirty;
+}
+.yao ul li a{
+    color: $f-color;
+    font-size:$sfont-size ;
+    margin-right: $ten-size;
+}
+.yao ul li:first-child a{
+    color: $fa-hover-color;
+}
+.yao ul li a:hover{
+    color: $fa-hover-color;
+    text-decoration: $ud-line;
+}
+.erweima{
+    width: $hundred;
+    padding-left: $thirty;
+    text-align: center;
+    float: $left;
+    margin-left: $hundred/2;
+}
+.erweima img{
+    width: $hundred;
+}
+.car{
+    float: right;
+    margin-top: $five-size;
+    font-size: $sfont-size;
+}
+.car a{
+    display: block;
+    background: url(../img/ind-pic.png) no-repeat $ten-size -312px;
+    border: 1px solid #eee;
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    position: relative;
+}
+em{
+    display: block;
+    position: absolute;
+    float: $left;
+    top: 3px;
+    line-height: $ten-size;
+    width: auto;
+    min-width: $sfont-size;
+    text-align: center;
+    vertical-align: middle;
+    left: $thirty;
+    font-weight: 700;
+    font-family: tahoma;
+    font-style: $normal;
+    color: $white;
+    font-size: $sfont-size;
+    height: 12px;
+    padding: 2px;
+    background: red;
+    border-radius: 16px;
+}
+.car span{
+    display: inline-block;
+    margin-left: $ten-size*2;
+    color: $f-color;
+    padding-right: 12px;
+    background: url(../img/ind-pic.png) no-repeat -124px -311px;
+}

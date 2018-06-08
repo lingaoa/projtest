@@ -1,0 +1,25 @@
+$ud-line:underline;
+$xl-size:26px;
+$m-size:14px;
+$f-color:#666;
+$zero:0px;
+$none:none;
+$color:#0083ce;
+.footer{
+            margin-top: $xl-size+24;
+            font-size: $m-size;    
+        }
+.footer p{
+            text-align: center;
+            line-height: $xl-size+4;
+            color: $f-color;
+        }
+.footer p a{
+            color: $f-color;
+            text-decoration: $none;
+            padding:$zero 6px;
+        }
+.footer p a:hover{
+            color: $color;
+            text-decoration: $ud-line;
+}

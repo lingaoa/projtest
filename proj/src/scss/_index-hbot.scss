@@ -1,0 +1,72 @@
+$wrapper:1190px;
+$hea-pad-size:13px;
+$none:none;
+$normal:normal;
+$ud-line:underline;
+$line:1px;
+$right:right;
+$zero:0px;
+$hundred:100px;
+
+$five-size:5px;
+$ten-size:10px;
+
+$font-size:16px;
+$sfont-size:12px;
+$thirty:30px;
+
+$inp-border:#c7a774;
+$left:left;
+$white:#fff;
+$fa-hover-color:#e54948;
+$f-color:#5e5e5e;
+
+
+.hea-last{
+    border-bottom: 2px solid #d2b994;
+}
+.fenlei{
+    width: 180px;
+}
+.fenlei>a{
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    background: #19323a;
+    width: 166px;
+    color: $white;
+    padding-left:14px ;
+    font-weight: 700; 
+    font-size: 15px;
+    font-family: tahoma,arial,Microsoft YaHei;
+    float: $left;
+}
+.fenlei>a:hover{
+    text-decoration: $ud-line;
+    
+}
+.hea-lnav{
+    width: 1000px;
+    float: right;
+}
+.hea-lnav li{
+    float: $left;
+}
+.hea-lnav li a{
+    display: block;
+    padding: $zero 18px;
+    line-height: 48px;
+    color: $f-color;
+}
+.hea-lnav li a:hover{
+    color: #0083ce;
+}
+.hea-lnav li:first-child a{
+    color: $f-color;
+}
+.hea-lnav li:nth-of-type(4) a{
+    color:$fa-hover-color;
+}
+.hea-lnav li:nth-of-type(7) a{
+    color:$fa-hover-color;
+}

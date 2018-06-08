@@ -1,0 +1,11 @@
+$width:990px;
+$zero:0px;
+$height:100px;
+.wrapper{
+            width: $width;
+            margin: $zero auto;
+}
+.header{
+            height:$height - 2;
+            overflow: hidden;
+}

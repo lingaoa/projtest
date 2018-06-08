@@ -1,0 +1,122 @@
+@import "header";
+$rline:-1px;
+$line:1px;
+$line-color:#efefef;
+$pad-size:6px;
+$xs-size:10px;
+$s-size:12px;
+$m-size:14px;
+$l-size:20px;
+$xl-size:26px;
+$zero:0px;
+$color:#0083ce;
+$h-color:#0099f1;
+$f-color:#666;
+$height:100px;
+$b-height:400px;
+$none:none;
+$normal:normal;
+$width:990px;
+$m-width:300px;
+$ud-line:underline;
+.main{
+            height: $b-height;
+            box-sizing: border-box;
+            box-shadow: $rline $line $xs-size $line-color, $rline $xs-size $xs-size $line-color;
+            background: url(../img/l_bg.png) no-repeat;
+            border-top: $color 2px solid;
+}
+a{
+            font-size: $s-size;
+}
+.main h2 {
+          font-style: normal;
+          font-weight: normal;
+          line-height: $xl-size;
+          color: #525252;
+          padding: $xs-size $l-size - 2 $xs-size $xl-size+2;
+          font-family: "微软雅黑";
+          font-size: $l-size; 
+}
+h2 span, h2 a {
+          font-size: $s-size;
+          float: right; 
+}
+h2 a{
+          color: $h-color;
+          text-decoration: $none;
+}
+.r-box{
+            float: right;
+            width: $b-height+30;
+        
+}
+.null{
+            height: 39px;
+            border-bottom: $line solid #ccc;
+            box-shadow: $zero $line 5px #ccc;
+}
+.main form{
+            padding: $pad-size $xl-size+4;
+}
+form .lab input {
+          width: $m-width;
+          height: $xl-size;
+          padding: $pad-size $pad-size*2 $pad-size $b-height/10;
+          margin-bottom: $m-width/10;
+          font-size: $m-size;
+}
+#username {
+          background: url(../img/regest.png) no-repeat $xs-size -115px;
+          border: $line solid #ccc;
+}
+#password{
+          background: url(../img/regest.png) no-repeat $xs-size -146px;
+          border: $line solid #ccc;
+          margin-bottom: $xs-size;
+}
+.fg-pas{
+    float: right;
+    text-decoration: $none;
+    color: $f-color;
+    font-size: $s-size;
+    margin-right: $s-size;
+}
+.fg-pas:hover{
+    color: $h-color;
+    text-decoration: underline;
+}
+.yzm input{
+    width: $m-width/2;
+    padding: $pad-size $s-size $pad-size $xs-size;
+    height: $xl-size;
+    margin-top: $l-size;
+    margin-bottom: $l-size;
+}
+.yzm a{
+    color: $h-color;
+    text-decoration: $none;
+}
+h2 a:hover,.yzm a:hover{
+    text-decoration: $ud-line;
+}
+.rest{
+    font-size: $s-size;
+}
+.rest input{
+    vertical-align: middle;
+}
+#submit{
+            width: $m-width+54;
+            height: $b-height/10;
+            background: $h-color;
+            color: #fff;
+            border:$zero;
+            outline: $none;
+            cursor: pointer;
+            margin-top: $m-size;
+        }
+#submit:hover{
+            background: $color;
+        }
+@import "footer";
