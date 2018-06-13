@@ -159,6 +159,35 @@ $bor-colorup:#e8e8e7;
     margin-left: 10px;
     cursor: pointer;
 }
+.zixun .tab1-bottom .kemu{
+    //display: $none;
+}
+.zixun .tab1-bottom .doctor{
+    width: 244px;
+    height: 108px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: $none;
+}
+.zixun .tab1-bottom .doctor a{
+    display: inline-block;
+    margin-left:20px ;
+    height: 72px;
+    width: 72px;
+}
+.zixun .tab1-bottom .doctor a:first-child{
+    background: url(../img/heart.png);
+}
+.zixun .tab1-bottom .doctor a:nth-of-type(2){
+    background: url(../img/human.png);
+}
+.zixun .tab1-bottom .doctor a:first-child:hover{
+    background: url(../img/heart1.png);
+}
+.zixun .tab1-bottom .doctor a:nth-of-type(2):hover{
+    background: url(../img/human1.png);
+}
 .zixun .tab1-bottom .kemu a{
     display: inline-block;
     float: left;
@@ -229,23 +258,37 @@ $bor-colorup:#e8e8e7;
     width: $hundred-eight;
     float: $left;
 }
-.floor .onefloor{
-    color: $white;
-    height: 85px;
-    background: #92c4ff;
-    text-align: center;
-    line-height: 85px;
-    font-size: $ten-size*2;
-}
 .floor .floor-nav li{
     float: $left;
     width: 89px;
     height: 49px;
-    text-align: center;
     line-height: 49px;
     border-left: $line solid $bor-color;
     border-bottom: $line solid $bor-color;
+    text-align: center;
 }
+.floor-left .floornum{
+    height: 85px;
+    background: #ccc;
+    text-align: center;
+    line-height: 85px;
+    font-size: $ten-size*2;
+}
+.white{
+    color: $white;
+}
+//.floor-left .twofloor{
+//  color: #ffa27a;
+//}
+//.floor-left .threefloor{
+//  color: #ff6b6b;
+//}
+//.floor-left .fourfloor{
+//  color: #f6c89e;
+//}
+//.floor-left .fivefloor{
+//  color: #aee177;
+//}
 .floor .floor-nav li a{
     color: $f-color;
     font-size: $mfont-size;
@@ -256,10 +299,10 @@ $bor-colorup:#e8e8e7;
 }
 .floor .floor-right{
     float: $left;
-    border-top: 2px solid #92c4ff;
 } 
 .floor-lunbo{
     float: $left;
+    position: relative;
 }
 .floor .floor-two{
     float: $left;
@@ -374,4 +417,117 @@ $bor-colorup:#e8e8e7;
         .onelunbo ul li a{
             display: block;
             opacity: 1;
-        }
+}
+//楼层轮播
+#header img{
+    width: 100%;
+}
+
+#nav img{
+    display: block;
+    width: 100%;
+    
+    }
+    
+#part {
+    width: 605px;
+    height: 284px;
+    float: left;
+}
+#part .partCon {
+    width: 605px;
+    height: 284px;
+    margin: 0 auto;
+    
+    
+}
+#part .partCon .left {
+    float: left;
+}
+#part .partCon .right {
+    float: right;
+}
+#part .partCon .banner {
+    float: $left;
+    width: 605px;
+    height: 284px;
+
+    position: relative;
+}
+#part .partCon .banner a {
+    width: 71px;
+    height: 71px;
+    display: none;  
+    
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+}
+#part .partCon .banner .scroll {
+        width: 605px;
+        height: 284px;
+        background: #abcdef;
+        position: relative;
+        overflow: hidden;
+}
+#part .partCon .banner .scroll img {/*所有图片的位置*/
+    position: absolute;
+    left: 605px;
+    cursor: pointer;
+    
+}
+#part .partCon .banner .scroll img.first {/*第一张图片*/
+    left: 0;
+}
+#part .partCon .banner .btn {
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    /*background: rgba(0,0,0,0.5);*/
+    left: 250px;
+    bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: #3e535a;
+    opacity: 0.6;
+}
+#part .partCon .banner .btn span {
+    width: 10px;
+    height: 10px;
+    background: #666;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+#part .partCon .banner .btn span.hover {
+    background: #fff;
+}
+.louceng{
+    display: $none;
+    width: 50px;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    border: 1px solid #ccc;
+}
+.louceng a{
+    display: block;
+    color: #5e5e5e;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: $white;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.louceng .huiding{
+    background: url(../img/ind-pic.png) no-repeat 90px 257px;
+    border: 0;
+}
+.louceng .blue{
+    background:#0099F1;
+    display:inline-block;
+    line-height:20px;
+    color: $white;
+}
