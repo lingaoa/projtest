@@ -1,0 +1,206 @@
+@import "index-htop";
+@import "index-hcont";
+@import "index-hbot";
+
+$wrapper:1190px;
+$hea-pad-size:13px;
+$none:none;
+$normal:normal;
+$ud-line:underline;
+$line:1px;
+$right:right;
+$zero:0px;
+$hundred:100px;
+
+$five-size:5px;
+$ten-size:10px;
+
+$font-size:16px;
+$sfont-size:12px;
+$mfont-size:14px;
+$twenty:20px;
+$thirty:30px;
+$thirty-six:36px;
+$forty:40px;
+$hundred-five:150px;
+$hundred-eight:180px;
+
+
+$inp-border:#c7a774;
+$left:left;
+$white:#fff;
+$fa-hover-color:#e54948;
+$f-color:#5e5e5e;
+$fy-color:#C7A774;
+$bor-color:#f3f3f3;
+$bor-colorup:#e8e8e7;
+.wrapper{
+    width: 990px;
+}
+.hea-rnav div{
+    a{
+    display: block;
+    line-height: $xl-size;
+    color: #5e5e5e;
+    }
+    i{
+        color: #C1E2B3;
+        font-style: $normal;
+    }
+    
+} 
+.hea-rnav .admin{
+        display: $none;
+        a:hover{
+            color: #d00;
+            text-decoration: $ud-line;
+        }
+}
+body .c-top{
+    padding: 0;
+    font-size: 16px;
+}
+.wrapper form input{
+    width: 400px;
+}
+.topheng{
+    display: block;
+    width: 100%;
+}
+.topheng img{
+    width:990px;
+    height: 60px;
+}
+.hea-lnav{
+    width: 800px;
+    float: right;
+}
+.hea-lnav li{
+    float: $left;
+}
+.hea-lnav li a{
+    display: block;
+    padding: $zero 8px;
+    line-height: 48px;
+    color: $f-color;
+}
+.fenlei{
+    background: #19323a;
+    position: relative;
+    height: 48px;
+    z-index: 10;
+}
+.fenlei a{
+    background: url(../img/ind-pic.png) no-repeat right -437px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 48px;
+    z-index: 10000;
+}
+.main{
+    font-family: "微软雅黑";
+    position: relative;
+}
+.mtop-lnav{
+    background: #314349;
+    width: $hundred-eight;
+    float: $left;
+    position: absolute;
+    display: $none;
+    z-index: 100000;
+}
+.mtop-lnav>li>a{
+    display: block;
+    width: $hundred-eight;
+    height: $forty;
+    color: $white;
+    position: relative;
+    transition: transform 0.3s,width 1s; 
+}
+.mtop-lnav>li>a:hover{
+    width: 175px;
+    background: $white;
+    transform: translateX(5px);
+}
+.mtop-lnav>li>a:hover i,.mtop-lnav>li>a:hover h4{
+    color: #000;
+}
+.mtop-lnav li>a i{
+    position: absolute;
+    font-size: $twenty;
+    left: $ten-size+8;
+    top: $ten-size;
+}
+.mtop-lnav>li>a h4{
+    line-height: $forty;
+    margin-left: 47px;
+    font-weight: $normal;
+    font-size:$mfont-size ;
+}
+.mtop-lnav .yincang{
+    position: absolute;
+    top: $zero;
+    left: $hundred-eight;
+    background: $white;
+    height: 400px;
+    width: 1010px;
+    display: none;
+    z-index: 10000;
+}
+.mtop-lnav .mtop-subnav{
+    float: $left;
+    width: 800px;
+    height: 400px;
+    padding: $ten-size $twenty;
+    box-sizing: border-box;
+    border-right: 1px solid $bor-colorup;
+    border-bottom: 1px solid $bor-colorup;
+}
+.mtop-lnav .mtop-subnav dl{
+    width: 235px;
+    height: 130px;
+    display: block;
+    float: $left;
+}
+.mtop-lnav .mtop-subnav dl dd{
+    float: $left;
+    color: $f-color;
+    margin: $ten-size/2  $ten-size/2 $ten-size/2 $zero;
+    font-size: $mfont-size;
+}
+.mtop-subnav a{
+    color: $f-color;
+}
+.mtop-subnav dt{
+    margin: $ten-size/2 0;
+    color: #334;
+}
+.mtop-subnav dt a{
+    font-weight: 700;
+}
+.mtop-subnav a:hover{
+    color: #d00;
+    text-decoration: $ud-line;
+}
+.mtop-lnav .zhongxi:hover .yincang{
+    display: block;
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.cart em{
+    background: none;
+    position: inherit;
+}

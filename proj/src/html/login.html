@@ -20,13 +20,18 @@
 				<a href="registor.html">免费注册</a>
 				<span>还不是1药网会员？</span>
 			</h2>
-			<form action="" autocomplete="off">
+			<form  method="post" autocomplete="off">
 				<label class='lab'><input type="text" name="username" id="username" placeholder="用户名" /></label>
-				<label for="password" class="lab"><input type="text" name="password" id="password" placeholder="登录密码" /></label>
-				<a href="" class="fg-pas">忘记密码？</a>
-				<label class="yzm"><input type="text" placeholder="验证码" name="yzm"/><a href="" >换一张</a></label><br>
-				<label for="rest" class="rest"><input type="checkbox" name="rest" id="rest"/>两周内免登录</label>
-				<input type="submit" name="submit" id="submit" value="登录" />
+				<p class="name-p">
+					<span id="name-p"></span>
+				</p>
+				<label for="password" class="lab"><input type="password" name="password" id="password" placeholder="登录密码" /></label>
+				<p class="clearfloat">
+					<span class="pwd-span" id="pwd-span"></span><a href="" class="fg-pas">忘记密码？</a>
+				</p>
+				<!--<label class="yzm"><input type="text" placeholder="验证码" name="yzm"/><a href="" >换一张</a></label><br>
+				<label for="rest" class="rest"><input type="checkbox" name="rest" id="rest"/>两周内免登录</label>-->
+				<input type="button" name="submit" id="submit" value="登录" />
 			</form>
 		</div>
 	</div>
@@ -48,5 +53,8 @@
 		</p>
 		<p>Copyright© 1药网 2010-2015， All Rights Reserved</p>
 	</div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../script/js/login.js"></script>
 </body>
 </html>

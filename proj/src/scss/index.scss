@@ -244,8 +244,11 @@ $bor-colorup:#e8e8e7;
     float: $left;
     height: $hundred-five;
     width: $hundred-eight;
-    background: url(../img/clock01.png);
     position: relative;
+    img{
+        width:$hundred-eight ;
+        height: $hundred-five;
+    }
 }
 .watch ul{
     float: $left;
@@ -531,3 +534,38 @@ $bor-colorup:#e8e8e7;
     line-height:20px;
     color: $white;
 }
+.hea-rnav div{
+    a{
+    display: block;
+    line-height: $xl-size;
+    color: #5e5e5e;
+    }
+    i{
+        color: #C1E2B3;
+        font-style: $normal;
+    }
+} 
+.hea-rnav .admin{
+        display: $none;
+        a:hover{
+            color: #d00;
+            text-decoration: $ud-line;
+        }
+}
+
+
+
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}

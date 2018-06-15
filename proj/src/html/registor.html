@@ -15,14 +15,15 @@
 			Hi , 欢迎注册
 			<a href="login.html">登录</a>
 			<span>我已经注册，现在就</span>
-			
-			
 		</h2>
-		<form action="">
+		<form action="../../php/reg.php" method="post" autocomplete="off">
 			<label for="username" class="lab"><input type="text" name="username" id="username" placeholder="用户名" /></label>
-			<label for="password" class="lab"><input type="text" name="password" id="password" placeholder="登录密码" /></label>
-			<label for="repwd" class="lab"><input type="text" name="repwd" id="repwd" placeholder="确认密码" /></label>
-			<label for="argee" class="arg"><input type="checkbox" name="argee" id="argee" checked="checked"/>我已阅读并同意<a href="#">《1药网服务协议》</a></label>
+			<p>请输入3-15位字符(汉字、字母、下划线)</p>
+			<label for="password" class="lab"><input type="password" name="password" id="password" placeholder="登录密码" /></label>
+			<p>请输入6位以上的密码</p>
+			<label for="repwd" class="lab"><input type="password" name="repwd" id="repwd" placeholder="确认密码"/></label>
+			<p>请确认密码</p>
+			<label for="argee" class="arg"><input type="checkbox" name="argee" id="argee" checked="checked"/>我已阅读并同意<a href="#">《1药网服务协议》</a><span id="agree-ts"></span></label>
 			<input type="submit" name="submit" id="submit" value="立即注册" />
 		</form>
 	</div>
@@ -43,5 +44,7 @@
 		</p>
 		<p>Copyright© 1药网 2010-2015， All Rights Reserved</p>
 	</div>
+	<script type="text/javascript" src="../script/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/js/registor.js"></script>
 </body>
 </html>

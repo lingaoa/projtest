@@ -54,9 +54,11 @@ form .lab input{
             width: $m-width;
             height: $xl-size;
             padding: $pad-size $s-size $pad-size $b-height/10;
-            margin-bottom: 30px;
             font-size: $m-size;
         }
+form  p{
+    line-height: 30px;
+}
 #username{
             background: url(../img/regest.png) no-repeat $xs-size -115px;
             border: 1px solid #ccc;

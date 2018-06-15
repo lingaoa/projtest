@@ -44,8 +44,10 @@ form .lab input {
   width: 268px;
   height: 26px;
   padding: 6px 12px 6px 40px;
-  margin-bottom: 30px;
   font-size: 14px; }
+
+form p {
+  line-height: 30px; }
 
 #username {
   background: url(../img/regest.png) no-repeat 10px -115px;

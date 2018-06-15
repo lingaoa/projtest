@@ -46,7 +46,7 @@
 			    $pricename.eq(index).html(value.shopname);
 			    $pricemoney.eq(index).html(value.price);
 			});*/
-			for(var i=0;i<5;i++){
+			for(var i=1;i<5;i++){
 				$pricepic.eq(i).attr({src:$shop[i].url});
 			    $pricename.eq(i).html($shop[i].shopname);
 			    $pricemoney.eq(i).html($shop[i].price);
@@ -56,7 +56,9 @@
 			    $pricename.eq(i).html($shop[i].shopname);
 			    $pricemoney.eq(i).html($shop[i].price);
 			}
-			
+			$pricepic.eq(0).attr({src:$shop[0].url.split(',')[0],x:$shop[0].cid});
+			$pricename.eq(0).html($shop[0].shopname);
+			$pricemoney.eq(0).html($shop[0].price);
 			//楼层轮播图
 			for(var i=0;i<3;i++){
 				$lcpic.eq(i).attr({src:$smalllunbo[i].url});
@@ -64,6 +66,8 @@
 			for(var i=3;i<6;i++){
 				$lcpic.eq(i).attr({src:$smalllunbo[i].url});
 			}
+			
+			
 		})
 	}
 )(jQuery);

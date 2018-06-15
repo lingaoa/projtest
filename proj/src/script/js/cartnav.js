@@ -1,0 +1,13 @@
+;(function(){
+	$nav=$('.mtop-lnav');
+	$('.fenlei').hover(function(){
+		$nav.css('display','block');
+	},function(){
+		$nav.css('display','none');
+	})
+	$nav.hover(function(){
+		$(this).css('display','block');
+	},function(){
+		$(this).css('display','none');
+	})
+})();
